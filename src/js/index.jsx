@@ -13,17 +13,17 @@ if( typeof addFilter === 'function' ){
   addFilter(
     "editor.PostTaxonomyType",
     'prime-cat/editor',
-    OriginalComponent => {
+    PostTaxonomyControl => {
       return class Filter extends React.Component {
         render() {
           if('category' !== this.props.slug || typeof wp.data.select !== 'function'){
             return (
-              <OriginalComponent { ...this.props } />
+              <PostTaxonomyControl { ...this.props } />
             );
           }
           return (
             <PrimeCat
-              OriginalComponent={ OriginalComponent }
+              PostTaxonomyControl={ PostTaxonomyControl }
               { ...this.props }
             />
           );

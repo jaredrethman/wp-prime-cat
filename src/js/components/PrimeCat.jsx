@@ -145,7 +145,7 @@ class PrimeCat extends React.Component {
 
   render() {
     const {
-      OriginalComponent,
+      PostTaxonomyControl,
       terms,
     } = this.props;
     let primeCatPills;
@@ -153,7 +153,7 @@ class PrimeCat extends React.Component {
     if (this.state.exceptionCaught) {
       return (
         <>
-          <OriginalComponent {...this.props} />
+          <PostTaxonomyControl {...this.props} />
           <div>
             ERROR: Loading Prime Cat component. View console.
           </div>
@@ -173,7 +173,7 @@ class PrimeCat extends React.Component {
     }
     return (
       <>
-        <OriginalComponent {...this.props} />
+        <PostTaxonomyControl {...this.props} />
         {primeCatPills}
       </>
     );
@@ -181,7 +181,7 @@ class PrimeCat extends React.Component {
 }
 
 PrimeCat.propTypes = {
-  OriginalComponent: PropTypes.func.isRequired,
+  PostTaxonomyControl: PropTypes.func.isRequired,
   setMetaFieldValue: PropTypes.func,
   terms: PropTypes.object,
 };
