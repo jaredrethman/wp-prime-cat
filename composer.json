@@ -1,0 +1,34 @@
+{
+  "name": "jared-rethman/wp-prime-cat",
+  "description": "Description: Provides Primary Category designation and ordering to your WordPress eco-system.",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/jared-rethman/wp-prime-cat",
+  "authors": [
+    {
+      "name": "Jared Rethman",
+      "email": "jaredrethman@gmail.com",
+      "homepage": "https://github.com/jaredrethman",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "source": "https://bitbucket.org/jared-rethman/wp-prime-cat",
+    "docs": "https://bitbucket.org/jared-rethman/wp-prime-cat/wiki/Home",
+    "issues": "https://bitbucket.org/jared-rethman/wp-prime-cat/issues"
+  },
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wp\\PrimeCat\\": "includes/"
+    }
+  },
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}

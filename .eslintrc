@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+  },
+  "globals": {
+    "document": false,
+    "jQuery": false,
+    "window": false,
+    "wp": false
+  }
+}
