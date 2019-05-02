@@ -19,6 +19,4 @@ A WordPress plugin for handling Primary Category assignment of all post types th
   1. Have taxonomy set to category - `'taxonomy' => ['category']`
   2. Have custom fields support -  `'supports' => ['custom-fields']`
 
-## Wiki:
-* [Component](https://bitbucket.org/jared-rethman/wp-prime-cat/wiki/Component) - User Interface.
-* [Documentation](https://bitbucket.org/jared-rethman/wp-prime-cat/wiki/Documentation) - Plugin Usage.# wp-prime-cat
+## [Wiki](https://github.com/jaredrethman/wp-prime-cat/wiki)
